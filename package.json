@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Zingle/sync.js/issues"
   },
-  "homepage": "https://github.com/Zingle/sync.js#readme"
+  "homepage": "https://github.com/Zingle/sync.js#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0"
+  }
 }
