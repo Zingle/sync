@@ -1,0 +1,19 @@
+{
+  "name": "@zingle/sync",
+  "version": "0.0.1",
+  "description": "synchronization primitive to bridge CPS and async functions",
+  "main": "sync.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Zingle/sync.js.git"
+  },
+  "author": "Richard Remer <reanjr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zingle/sync.js/issues"
+  },
+  "homepage": "https://github.com/Zingle/sync.js#readme"
+}
