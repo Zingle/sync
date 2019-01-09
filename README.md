@@ -2,7 +2,8 @@ Sync Function
 =============
 The `sync` function can be used to bridge async functions with traditional
 continuation-passing style (CPS) functions.  Use the `sync` function to create
-a `Promise` that can be passed as a callback to a function expecting CPS.
+a callback with an associated `Promise` which can be used as a deferred result
+for the callback.
 
 Example
 -------
