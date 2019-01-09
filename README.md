@@ -13,6 +13,6 @@ const sync = require("sync");
 async function asyncReadFile(file) {
     const done = sync();        // create synchronization primitive
     fs.readFile(file, done);    // pass primitive as CPS callback
-    return done;                // return primitive from async function
+    return done.promise;        // return resulting promise
 }
 ```

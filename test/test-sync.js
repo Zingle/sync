@@ -8,16 +8,18 @@ describe("sync()", () => {
         done = sync();
     });
 
-    it("should return function that acts as Promise", () => {
+    it("should return callback function", () => {
         expect(done).to.be.a("function");
-        expect(done.then).to.be.a("function");
-        expect(done.catch).to.be.a("function");
+    });
+
+    it("should assign promise to callback", () => {
+        expect(done.promise).to.be.a(Promise);
     });
 
     it("should reject with error passed to function", async () => {
         done(new Error("foo"));
 
-        return done.then(value => {
+        return done.promise.then(value => {
             return false;
         }).catch(err => {
             expect(err.message).to.be("foo");
@@ -30,7 +32,7 @@ describe("sync()", () => {
     it("should resolve with second argument passed to function", async () => {
         done(null, 42);
 
-        return done.then(value => {
+        return done.promise.then(value => {
             expect(value).to.be(42);
         });
     });

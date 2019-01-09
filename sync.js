@@ -14,10 +14,7 @@ function sync() {
         };
     });
 
-    return assign(sync, {
-        then: promise.then.bind(promise),
-        catch: promise.catch.bind(promise)
-    });
+    return assign(sync, {promise});
 }
 
 module.exports = sync;

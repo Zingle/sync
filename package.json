@@ -1,6 +1,6 @@
 {
   "name": "@zingle/sync",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "synchronization primitive to bridge CPS and async functions",
   "main": "sync.js",
   "scripts": {
